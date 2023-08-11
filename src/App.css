@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --text-color-dark: #212529;
+  --text-color: #333;
+  --theme-color: #e9a218;
+  --shadow-color: #00000055;
+  --theme-bg-color: #e9a218;
+  --bg-color: #f3f3f3;
+  --subtle-text: #858585;
+}
+
+* {
+  font-family: 'Poppins';
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.main-nav {
+  background-color: var(--bg-color);
+  box-shadow: 5px 5px 10px var(--shadow-color);
+  color: var(--text-color);
+}
+
+.logo {
+  font-size: 36px;
+  color: var(--theme-color);
+}
+
+.main-nav ul button {
+  border: none;
+  padding: 10px;
+  width: 8rem;
+  border-radius: 50px;
+  background-color: var(--theme-color);
+  color: #fff;
+  transition: .3s;
+  
+}
+
+.main-nav ul button:hover {
+  background-color: var(--text-color);
+  cursor: pointer;
+}
+
+.main-nav ul li a {
+  transition: .3s;
+}
+
+.main-nav ul li a:hover {
+  color: var(--theme-color);
+}
+
+.post-preview {
+  margin: 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-text {
+ color: var(--subtle-text);
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#navdd {
+  justify-content: flex-end;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.25rem;
+}
+
+.likes {
+  width: 2rem;
+  height: 2rem;
+  background: url(/public/like.svg);
+  background-repeat: no-repeat;
+}
+
+.comments {
+  background: url(/public/comment.svg);
+  width: 2rem;
+  height: 2rem;
+}
+
+.statistics {
+  height: inherit;
+  display: flex;
+  gap: 1rem;
+}
+
+.login-form {
+  width: 18rem;
+  height: auto;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+.login-form button {
+  border: none;
+  background-color: var(--theme-bg-color);
+  color: #fff;
+  padding: .5rem;
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.login-form button:hover {
+  background-color: var(--text-color);
+}
+
+.extra span {
+  display: block;
+  font-size: .9rem;
+  color: var(--subtle-text);
+  margin-top: .5rem;
+}
+
+.extra a {
+  text-decoration: underline;
+}
+
+.post-preview:hover {
+  box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+.page-title {
+  font-size: 42px;
+}
+
+main {
+  gap: 0;
+}
+
+.footer {
+  background-color: var(--theme-bg-color);
+  color: #fff;
+}
