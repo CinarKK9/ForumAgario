@@ -3,8 +3,14 @@ import * as React from 'react';
 
 export const Posts = ({posts, title}) => {
     return (
-        <div className="posts"> 
-            <h2 className='page-title ms-4 my-3'>{ title }</h2>
+        <div className="posts">
+            <div className='d-flex justify-content-between align-items-center uwuwuwu'>
+                <h2 className='page-title'>{ title }</h2>
+                <div className="input-group w-25">
+                    <input type="search" className="form-control" placeholder="Search Something" name='q'/>
+                    <button className="btn" type="button">Search</button>
+                </div>
+            </div>
         {
             posts.map((post) => (
                 <div className="post-preview card" key={post.id}>

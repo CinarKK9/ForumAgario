@@ -28,21 +28,15 @@ export function Navbar() {
     </button>
     <div className="collapse navbar-collapse" id="navdd">
       <ul className='navbar-nav'>
-          <li className='nav-item'>
-            <div class="input-group me-3">
-              <input type="text" class="form-control" placeholder="Search a Post" aria-label="search" aria-describedby="button-addon" />
-              <button class="btn btn-outline-secondary me-3" type="button" id="button-addon2">Search</button>
-            </div>
-          </li>
           <li className='nav-item'><a href='localhost:3000' className='nav-link me-3'>Home</a></li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle me-3" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle me-3" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Explore
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/">Newest Posts</a></li>
-            <li><a class="dropdown-item" href="/">Most Liked Posts</a></li>
-            <li><a class="dropdown-item" href="/">Most Commented Posts</a></li>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="/">Newest Posts</a></li>
+            <li><a className="dropdown-item" href="/">Most Liked Posts</a></li>
+            <li><a className="dropdown-item" href="/">Most Commented Posts</a></li>
           </ul>
         </li>
           <li className='nav-item'><a href='localhost:3000' className='nav-link me-3'>Sign In</a></li>
@@ -57,7 +51,7 @@ export function Navbar() {
 function Footer() {
   return(
     <div className="footer container-fluid text-center mt-5 p-2">
-      2023 &copy; Forum Agar.io | All Rights Reserved.
+      2023 &copy; Forum Agar.io
     </div>
   )
 }

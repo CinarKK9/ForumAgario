@@ -20,7 +20,6 @@ a {
 }
 
 .main-nav {
-  background-color: var(--bg-color);
   box-shadow: 5px 5px 10px var(--shadow-color);
   color: var(--text-color);
 }
@@ -54,7 +53,7 @@ a {
   color: var(--theme-color);
 }
 
-.post-preview {
+.post-preview, .uwuwuwu {
   margin: 20px;
 }
 
@@ -102,10 +101,21 @@ a {
 }
 
 .login-form {
-  width: 18rem;
-  height: auto;
-  background-color: #f0f0f0;
+  width: 25rem;
+  height: 30rem;
   padding: 1rem;
+}
+
+.switch-logo {
+  width: 2rem;
+  height: 2rem;
+  transition: .5s ease-in-out;
+  background: url(/public/moon.svg) no-repeat;
+}
+
+.switch-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .login-form button {
@@ -147,4 +157,15 @@ main {
 .footer {
   background-color: var(--theme-bg-color);
   color: #fff;
+}
+
+.posts .btn {
+  background-color: var(--theme-bg-color);
+  color: #fff;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.posts .btn:hover {
+  background-color: var(--text-color);
 }
