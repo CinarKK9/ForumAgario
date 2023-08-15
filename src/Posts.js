@@ -6,7 +6,7 @@ export const Posts = ({posts, title}) => {
         <div className="posts">
             <div className='d-flex justify-content-between align-items-center uwuwuwu'>
                 <h2 className='page-title'>{ title }</h2>
-                <div className="input-group w-50">
+                <div className="input-group w-25 search">
                     <input type="search" className="form-control" placeholder="Search Something" name='q'/>
                     <button className="btn" type="button">Search</button>
                 </div>

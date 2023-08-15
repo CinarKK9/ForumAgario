@@ -206,3 +206,15 @@ main {
 .cross:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1000px){
+  .uwuwuwu {
+    flex-direction: column;
+    align-items: baseline!important;
+  }
+
+  .search {
+    width: 100%!important;
+  }
+
+}
