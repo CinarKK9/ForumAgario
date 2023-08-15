@@ -57,7 +57,12 @@ a {
   margin: 20px;
 }
 
+.card {
+  transition: .3s ease;
+}
+
 .card:hover {
+  transform: translateY(-3%);
   cursor: pointer;
 }
 
@@ -101,9 +106,13 @@ a {
 }
 
 .login-form {
+  background-color: var(--text-color-dark);
   width: 25rem;
   height: 30rem;
   padding: 1rem;
+  border-left: 5px solid var(--theme-bg-color);
+  border-top-left-radius: 0!important;
+  border-bottom-left-radius: 0!important;
 }
 
 .switch-logo {
@@ -168,4 +177,32 @@ main {
 
 .posts .btn:hover {
   background-color: var(--text-color);
+}
+
+.login-wrap {
+  z-index: 9999;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(10px);
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: url(/public/x.svg);
+  margin-top: -0.4rem;
+}
+
+.cross:hover {
+  cursor: pointer;
 }

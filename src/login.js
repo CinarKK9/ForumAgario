@@ -1,10 +1,13 @@
-// @flow 
-import * as React from 'react';
+import React from 'react';
+import { useState } from 'react';
 
-function Login() {
+function Login({ onClose }) {
+    
     return(
-            <form action="/backend/login.php" className='login-form m-auto rounded shadow-lg'>
+        <div className="login-wrap text-light">
+            <form action="/backend/login.php" className='login-form rounded shadow'>
                 <div>
+                    <div className="cross d-inline-block float-end" onClick={onClose}></div>
                     <div className="mail mb-3">
                         <label htmlFor="mail" className='form-label'>Mail</label>
                         <input type="text" placeholder='Enter Mail Adress' className='form-control'/>
@@ -21,6 +24,7 @@ function Login() {
                     </div>
                 </div>
             </form>
+        </div>
     )
 }
 

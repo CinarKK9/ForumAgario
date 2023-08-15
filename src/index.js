@@ -8,11 +8,11 @@ import { Navbar } from './App';
 import { Footer } from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const signInButton = document.getElementById('SignIn');
 root.render(
   <React.StrictMode>
     <Navbar />
     <App />
-    <Login/>
     <Footer />
   </React.StrictMode>
 );

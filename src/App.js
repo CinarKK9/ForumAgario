@@ -1,6 +1,7 @@
 import './App.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Posts } from './Posts';
+import Login from './login';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -19,6 +20,19 @@ function App() {
 }
 
 export function Navbar() {
+
+  const [SignIn, setSignIn] = useState(false);
+
+  const handleSignInClick = () => {
+    setSignIn(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const handleCloseClick = () => {
+    setSignIn(false);
+    document.body.style.overflow = 'auto';
+  };
+
   return(
     <nav className='main-nav navbar navbar-expand-lg'>
     <div className="container-fluid">
@@ -39,7 +53,8 @@ export function Navbar() {
             <li><a className="dropdown-item" href="/">Most Commented Posts</a></li>
           </ul>
         </li>
-          <li className='nav-item'><a href='localhost:3000' className='nav-link me-3'>Sign In</a></li>
+          <li className='nav-item'><a href='#a' className='nav-link me-3' id='signIn' onClick={handleSignInClick}>Sign In</a></li>
+          {SignIn && <Login onClose={handleCloseClick} />}
           <button>+ Create Post</button>
         </ul>
     </div>
