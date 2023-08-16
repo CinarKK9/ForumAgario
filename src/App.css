@@ -5,13 +5,24 @@
   --text-color: #333;
   --theme-color: #e9a218;
   --shadow-color: #00000055;
-  --theme-bg-color: #e9a218;
   --bg-color: #f3f3f3;
-  --subtle-text: #858585;
+  --subtle-text: #b0b0b0;
 }
 
 * {
   font-family: 'Poppins';
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 a {
@@ -110,7 +121,7 @@ a {
   width: 25rem;
   height: 30rem;
   padding: 1rem;
-  border-left: 5px solid var(--theme-bg-color);
+  border-left: 5px solid var(--theme-color);
   border-top-left-radius: 0!important;
   border-bottom-left-radius: 0!important;
 }
@@ -129,7 +140,7 @@ a {
 
 .login-form button {
   border: none;
-  background-color: var(--theme-bg-color);
+  background-color: var(--theme-color);
   color: #fff;
   padding: .5rem;
   border-radius: 50px;
@@ -157,6 +168,7 @@ a {
 
 .page-title {
   font-size: 42px;
+  margin: 0;
 }
 
 main {
@@ -164,12 +176,12 @@ main {
 }
 
 .footer {
-  background-color: var(--theme-bg-color);
+  background-color: var(--theme-color);
   color: #fff;
 }
 
 .posts .btn {
-  background-color: var(--theme-bg-color);
+  background-color: var(--theme-color);
   color: #fff;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;

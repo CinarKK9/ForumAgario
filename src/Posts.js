@@ -15,7 +15,7 @@ export const Posts = ({posts, title}) => {
             posts.map((post) => (
                 <div className="post-preview card" key={post.id}>
                     <div className="card-body">
-                        <span className="card-title" style={{marginBottom: 10 + 'rem'}}>{post.title}</span>
+                        <span className="card-title">{post.title}</span>
                         <p className="preview card-text">{post.preview}</p>
                         <div className="info mt-4 align-items-center">
                             <span>- {post.author}</span>

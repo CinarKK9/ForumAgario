@@ -13,7 +13,9 @@ function App() {
     return(
       <main className='mt-3'>
         {
+          <>
           <Posts posts={posts} title='All Posts'/>
+          </>
         }
       </main>
     );
