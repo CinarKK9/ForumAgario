@@ -4,6 +4,7 @@ import { Posts } from './Posts';
 import Login from './login';
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [posts, setPosts] = useState([
     {title: 'Facebook Login Problem', preview: 'loreasdfhjklasdfjklhasdflkjfhalksjdvfbhlajkhdfblvakjdhsflbvakjsdhfblvadkshjflaskdm...', author:'Ali Cabbar', likes: 69, comments: 72,  id: 1},
     {title: 'Joystick Bugged', preview: 'So, yesterday I tried to login to agario wi...', author:'Ali Cabbar', likes: 69, comments: 72,  id: 2},
