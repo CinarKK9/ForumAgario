@@ -1,9 +1,9 @@
-<?php 
-    include './conn.php';
+<?php
+include './conn.php';
 
-    connect();
+connect();
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["usermail"];
     $password = $_POST["userpass"];
 
@@ -19,7 +19,7 @@
         $signup_query = "INSERT INTO users (username, password) VALUES (?, ?)";
         $signup_stmt = $conn->prepare($signup_query);
         $signup_stmt->bind_param("ss", $username, $password);
-        
+
         if ($signup_stmt->execute()) {
             echo "You successfully signed up.";
         } else {
