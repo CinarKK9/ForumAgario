@@ -1,8 +1,6 @@
 <?php
 include './conn.php';
 
-connect();
-
 $usermail = $_POST['mail'];
 $userpass = $_POST['password'];
 
